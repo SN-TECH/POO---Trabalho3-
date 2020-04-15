@@ -30,5 +30,14 @@ public class Funcionario {
     }
 
     // funcao de bonificao
-    void getBonification(){   }
+    public void getBonification(Double percent) {        
+        System.out.println("Gratificacao: R$ "+ this.salario * percent); //
+    }    
+
+    public void listarFuncionario() {
+        System.out.println(
+        "Nome: "+getNome()+
+        "\nCPF: "+getCpf()+
+        "\nSalario: R$ "+getSalario());
+    }
 }
